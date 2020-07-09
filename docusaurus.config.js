@@ -1,103 +1,95 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  title: "XBuilder",
+  tagline: "Java library for creating XML files based on Universal Bussiness Language (UBL)",
+  url: "https://project-openubl.github.io",
+  baseUrl: "/xbuilder-docs/",
+  favicon: "img/favicon.ico",
+  organizationName: "project-openubl", // Usually your GitHub org/user name.
+  projectName: "xbuilder", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: "",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "XBuilder logo",
+        src: "img/logo.svg",
       },
       links: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          to: "docs/",
+          activeBasePath: "docs",
+          label: "Docs",
+          position: "left",
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        // { to: "blog", label: "Blog", position: "left" },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/project-openubl/xml-builder-lib",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: "Introduction",
+              to: "docs/",
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: "Getting started",
+              to: "docs/example/",
             },
           ],
         },
         {
-          title: 'Community',
-          items: [
+          title: "Community",
+          items: [            
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: "Twitter",
+              href: "https://twitter.com/openubl",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "GitHub",
+              href: "https://github.com/project-openubl/xml-builder-lib",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Project OpenUBL, Inc.`,
     },
   },
+  stylesheets: [
+    "https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap",
+    "https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap",
+  ],
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
-          sidebarPath: require.resolve('./sidebars.js'),
+          homePageId: "introduction",
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            "https://github.com/facebook/docusaurus/edit/master/website/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
