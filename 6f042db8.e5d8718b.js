@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{154:function(l){l.exports=JSON.parse('{"allTagsPath":"/xbuilder-docs/blog/tags","slug":"hello","name":"hello","count":2,"permalink":"/xbuilder-docs/blog/tags/hello"}')}}]);
